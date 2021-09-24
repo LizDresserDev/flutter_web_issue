@@ -1,16 +1,44 @@
 # web_issue_example
 
-A new Flutter project.
+An buggy Flutter project that uses Firebase Messaging. The user can't enter text into a textfield becaues the autofocus is still on the original _emailController.
 
-## Getting Started
+## Reproduction Steps
 
-This project is a starting point for a Flutter application.
+1. Run: `flutter build web`
+2. Run: `flutter run --verbose --release -d chrome > verbose_web_issue_example_output.txt`
+3. Inspect the page and go to the console tab
+4. The app is built twice
+5. Enter text into the email text field. While no text shows up, text is being added to the original _emailController.
 
-A few resources to get you started if this is your first Flutter project:
+### Expected Output
+```
+New service worker available.			(index):86 
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+MAIN projectUuid: 810c44a3-7e45-4274-a51c-93b0ef998ce3
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+BILD projectUuid: 810c44a3   _emailController #a7890 text: 
+
+LSTN projectUuid: 810c44a3   _emailController #a7890 text: 
+
+Installed new service worker.			(index):84 
+
+MAIN projectUuid: 0825003f-675c-4394-a6b9-9117ca76f76d
+
+BILD projectUuid: 0825003f   _emailController #e92ec text: 
+
+LSTN projectUuid: 0825003f   _emailController #e92ec text: 
+
+LSTN projectUuid: 810c44a3   _emailController #a7890 text: m
+
+LSTN projectUuid: 810c44a3   _emailController #a7890 text: my
+
+LSTN projectUuid: 810c44a3   _emailController #a7890 text: mye
+
+LSTN projectUuid: 810c44a3   _emailController #a7890 text: myem
+
+LSTN projectUuid: 810c44a3   _emailController #a7890 text: myema
+
+LSTN projectUuid: 810c44a3   _emailController #a7890 text: myemai
+
+LSTN projectUuid: 810c44a3   _emailController #a7890 text: myemail
+```
