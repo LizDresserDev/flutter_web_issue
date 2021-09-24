@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "828518094230",
+    "project_id": "flutter-web-rebuild-issue",
+    "storage_bucket": "flutter-web-rebuild-issue.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:828518094230:android:5ffa1920acf8502898b9b7",
+        "android_client_info": {
+          "package_name": "com.example.web_issue_example"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "828518094230-hu8fdnu1co3diotl7k47rqp0ofvp8rml.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADzbjOO6SFN3cnduXOq0oS4Xr0WVii8II"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "828518094230-hu8fdnu1co3diotl7k47rqp0ofvp8rml.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
