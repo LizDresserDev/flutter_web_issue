@@ -1,6 +1,6 @@
 # web_issue_example
 
-An buggy Flutter project that uses Firebase Messaging. The user can't enter text into a textfield becaues the autofocus is still on the original _emailController.
+A buggy Flutter project that uses Firebase Messaging. The user can't enter text into a textfield becaues the autofocus is still on the original _emailController.
 
 ## Reproduction Steps
 
